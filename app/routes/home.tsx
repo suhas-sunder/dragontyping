@@ -51,6 +51,13 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         "@type": "WebSite",
         name: "Dragon Typing",
         url: "https://dragontyping.com/",
+        description:
+          "Dragon Typing is a fast browser typing game. Type the right words to run, take off, and fly. Mistakes cause your dragon to land and stumble. Play timed modes or unlimited practice. Track progress, improve skills, and enjoy a fun dragon-themed experience for all ages.",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://dragontyping.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
       },
       {
         "@type": "VideoGame",
@@ -61,7 +68,31 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         operatingSystem: "Web",
         genre: ["Typing", "Word Game", "Action"],
         description:
-          "Type the correct words to power a dragon that runs, takes off, and flies. Too many errors force a landing and a stumble. Includes timed and unlimited modes.",
+          "Type the correct words to power a dragon that runs, takes off, and flies. Too many errors force a landing and a stumble. Includes timed and unlimited modes, skill building, progress tracking, and educational features.",
+        gameLocation: "Online",
+        educationalUse: [
+          "Typing practice for kids and adults",
+          "Classroom and home learning",
+          "Skill building and curriculum",
+        ],
+        audience: [
+          "Beginners",
+          "Kids",
+          "Advanced typists",
+          "Families",
+          "Schools",
+        ],
+        features: [
+          "Timed sprints (30, 60, 120 seconds)",
+          "Unlimited mode",
+          "Custom word lists",
+          "Progress tracking",
+          "Accessibility options",
+          "Multilingual support",
+          "Typing tests and certification",
+          "Family and group play",
+          "Daily streaks",
+        ],
       },
       {
         "@type": "FAQPage",
@@ -71,7 +102,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             name: "What is Dragon Typing?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Dragon Typing is a fast browser typing game. Correct words give speed, altitude, and score. Mistakes reduce stamina and can cause a landing or a trip.",
+              text: "Dragon Typing is a fast browser typing game. Correct words give speed, altitude, and score. Mistakes reduce stamina and can cause a landing or a trip. It is designed for fun, skill building, and progress tracking.",
             },
           },
           {
@@ -87,7 +118,63 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             name: "Does it work on mobile and desktop?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. External keyboards are recommended for best results. The interface supports touch input and on screen keyboards.",
+              text: "Yes. External keyboards are recommended for best results. The interface supports touch input and on-screen keyboards.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I pick difficulty?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Choose beginner, intermediate, or advanced lists. Adaptive mode can scale difficulty based on recent accuracy.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do I need an account?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "No account is required for core play. Local storage can keep your recent results on your device.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is Dragon Typing suitable for kids?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. The game includes kid-friendly vocabulary, visual feedback, and a safe, distraction-free environment for learning.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does Dragon Typing support multiple languages?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Word lists can be adapted for different languages and regional spelling variants.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How is progress tracked?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Each session reports words per minute, accuracy, flight time, error types, and best streak. Progress is tracked locally.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I use Dragon Typing for group play?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Families and classrooms can use group challenges and races for fun and motivation.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What are the main benefits?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Dragon Typing improves typing speed, accuracy, rhythm, and cognitive skills. It is engaging for all ages and skill levels.",
             },
           },
         ],
