@@ -93,6 +93,38 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           "Family and group play",
           "Daily streaks",
         ],
+        modes: [
+          "Timed 60",
+          "Timed 120",
+          "Unlimited",
+          "Hard words",
+          "Beginner words",
+          "Custom lists",
+        ],
+        skillLevels: ["Foundations", "Intermediate", "Advanced"],
+        accessibility: ["Readable UI", "Fast input", "Data light"],
+        training: ["Rare letters", "Long words", "Speed bursts"],
+        multilingual: [
+          "Multiple alphabets",
+          "Regional spelling variants",
+          "Practice in preferred language",
+        ],
+        certification: [
+          "30, 60, 120 second typing tests",
+          "Scorecards with WPM and error breakdowns",
+          "Printable certificates",
+        ],
+        cognitiveBenefits: ["Pattern recognition", "Focus training"],
+        familyPlay: [
+          "Family typing nights",
+          "Group classroom challenges",
+          "Teamwork and shared progress",
+        ],
+        habits: [
+          "Daily streaks",
+          "Warm-up runs",
+          "Short sessions for improvement",
+        ],
       },
       {
         "@type": "FAQPage",
@@ -177,7 +209,127 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               text: "Dragon Typing improves typing speed, accuracy, rhythm, and cognitive skills. It is engaging for all ages and skill levels.",
             },
           },
+          {
+            "@type": "Question",
+            name: "How does scoring work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Score comes from words per minute, accuracy, and flight multipliers. Clean streaks increase the multiplier. Errors reduce stamina and can end a run.",
+            },
+          },
         ],
+      },
+      {
+        "@type": "ItemList",
+        name: "Game Modes",
+        itemListElement: [
+          "Timed 60",
+          "Timed 120",
+          "Unlimited",
+          "Hard words",
+          "Beginner words",
+          "Custom lists",
+        ].map((name, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name,
+        })),
+      },
+      {
+        "@type": "ItemList",
+        name: "Skill Levels",
+        itemListElement: ["Foundations", "Intermediate", "Advanced"].map(
+          (name, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name,
+          })
+        ),
+      },
+      {
+        "@type": "ItemList",
+        name: "Accessibility Features",
+        itemListElement: ["Readable UI", "Fast input", "Data light"].map(
+          (name, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name,
+          })
+        ),
+      },
+      {
+        "@type": "ItemList",
+        name: "Advanced Training",
+        itemListElement: ["Rare letters", "Long words", "Speed bursts"].map(
+          (name, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name,
+          })
+        ),
+      },
+      {
+        "@type": "ItemList",
+        name: "Multilingual Support",
+        itemListElement: [
+          "Multiple alphabets",
+          "Regional spelling variants",
+          "Practice in preferred language",
+        ].map((name, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name,
+        })),
+      },
+      {
+        "@type": "ItemList",
+        name: "Typing Certification",
+        itemListElement: [
+          "30, 60, 120 second typing tests",
+          "Scorecards with WPM and error breakdowns",
+          "Printable certificates",
+        ].map((name, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name,
+        })),
+      },
+      {
+        "@type": "ItemList",
+        name: "Cognitive Benefits",
+        itemListElement: ["Pattern recognition", "Focus training"].map(
+          (name, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name,
+          })
+        ),
+      },
+      {
+        "@type": "ItemList",
+        name: "Family and Group Play",
+        itemListElement: [
+          "Family typing nights",
+          "Group classroom challenges",
+          "Teamwork and shared progress",
+        ].map((name, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name,
+        })),
+      },
+      {
+        "@type": "ItemList",
+        name: "Typing Habits",
+        itemListElement: [
+          "Daily streaks",
+          "Warm-up runs",
+          "Short sessions for improvement",
+        ].map((name, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name,
+        })),
       },
     ],
   };
