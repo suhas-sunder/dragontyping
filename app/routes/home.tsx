@@ -42,7 +42,6 @@ export function loader({ context }: Route.LoaderArgs) {
   };
 }
 
-
 export default function Home({ loaderData }: Route.ComponentProps) {
   const { message, nextUpdateHint, launchWindow } = loaderData;
 
@@ -355,7 +354,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       <section className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 py-14">
         <div className="space-y-6">
           <h1 className="text-4xl text-sky-900 font-extrabold tracking-tight sm:text-5xl text-center">
-            Type fast. Feed your dragon. Run, take off, & fly. 
+            Type fast. Feed your dragon. Run, take off, & fly.
           </h1>
           <p className="text-lg text-zinc-700">
             Dragon Typing blends a satisfying typing word game with an action
@@ -383,13 +382,14 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             >
               Practice in unlimited mode
             </button>{" "}
-            <Link
+            <a
+              href="https://www.freetypingcamp.com"
               target="_blank"
-              to="www.freetypingcamp.com"
+              rel="noopener noreferrer"
               className="inline-flex items-center rounded-xl bg-sky-600 px-5 py-3 text-white shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
             >
               Learn Touch Typing
-            </Link>
+            </a>
           </div>
 
           <p className="sr-only">
@@ -401,7 +401,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* How to Play */}
       <section id="how-to-play" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">How to play Dragon Typing</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          How to play Dragon Typing
+        </h2>
         <p className="mt-3 text-zinc-700">
           Type the prompted words with accuracy. Each correct word adds speed
           and lifts the dragon from a run to a glide, then to a full flight.
@@ -479,7 +481,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* Results */}
       <section id="results" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Results and progress</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Results and progress
+        </h2>
         <p className="mt-3 text-zinc-700">
           Each session reports words per minute, raw keystrokes, accuracy,
           flight time, and best streak. Use the trends to pick the right
@@ -495,7 +499,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* Skill Building */}
       <section id="skill-building" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Skill building and curriculum</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Skill building and curriculum
+        </h2>
         <p className="mt-3 text-zinc-700">
           Dragon Typing teaches rhythm, accuracy, and pattern recognition. Word
           lists progress from common letters to advanced blends and rare tokens.
@@ -532,7 +538,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         id="accessibility-performance"
         className="mx-auto max-w-6xl px-4 pb-12"
       >
-        <h2 className="text-2xl text-sky-900 font-bold">Accessibility and performance</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Accessibility and performance
+        </h2>
         <p className="mt-3 text-zinc-700">
           The interface favors readable text, keyboard friendly focus states,
           and smooth frame pacing. Works on desktop and mobile. External
@@ -562,7 +570,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Typing Skills and Benefits ===================== */}
       <section id="typing-benefits" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Typing skills and benefits</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Typing skills and benefits
+        </h2>
         <p className="mt-3 text-zinc-700">
           Dragon Typing is more than a game. It improves words per minute,
           builds accuracy, and strengthens rhythm on a keyboard. By tying
@@ -644,7 +654,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Fun Theme and Motivation ===================== */}
       <section id="dragon-theme" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Fun theme and motivation</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Fun theme and motivation
+        </h2>
         <p className="mt-3 text-zinc-700">
           The dragon is more than a mascot. It is a visual reward system. Smooth
           typing keeps your dragon flying high and fast. Mistakes cause the
@@ -674,7 +686,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Accuracy vs Speed ===================== */}
       <section id="accuracy-speed" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Accuracy versus speed</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Accuracy versus speed
+        </h2>
         <p className="mt-3 text-zinc-700">
           Dragon Typing rewards balance. Speed without accuracy causes the
           dragon to stumble, while careful precise typing extends flight time.
@@ -739,7 +753,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Advanced Typist Training ===================== */}
       <section id="advanced-training" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Advanced typist training</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Advanced typist training
+        </h2>
         <p className="mt-3 text-zinc-700">
           For experienced players, Dragon Typing introduces harder word lists,
           rare letters, and fast-paced sequences. These advanced drills push
@@ -779,7 +795,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         id="multilingual-support"
         className="mx-auto max-w-6xl px-4 pb-12"
       >
-        <h2 className="text-2xl text-sky-900 font-bold">Multilingual support</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Multilingual support
+        </h2>
         <p className="mt-3 text-zinc-700">
           Dragon Typing can adapt word lists to different languages. This allows
           players around the world to improve typing accuracy in English,
@@ -799,7 +817,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Typing Tests and Certification ===================== */}
       <section id="typing-tests" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Typing tests and certification</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Typing tests and certification
+        </h2>
         <p className="mt-3 text-zinc-700">
           Use Dragon Typing as both a fun game and a formal typing test. Timed
           modes measure words per minute, accuracy percentage, and consistency.
@@ -819,7 +839,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Cognitive and Learning Benefits ===================== */}
       <section id="cognitive-benefits" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Cognitive and learning benefits</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Cognitive and learning benefits
+        </h2>
         <p className="mt-3 text-zinc-700">
           Typing games improve memory, pattern recognition, and focus. Dragon
           Typing keeps the brain active by requiring quick word recognition,
@@ -848,7 +870,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Family and Group Play ===================== */}
       <section id="family-play" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Family and group play</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Family and group play
+        </h2>
         <p className="mt-3 text-zinc-700">
           Dragon Typing can be played solo or in group settings. Families can
           practice together by taking turns, and classrooms can use group
@@ -868,7 +892,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
       {/* ===================== Typing Habits and Daily Routine ===================== */}
       <section id="typing-habits" className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="text-2xl text-sky-900 font-bold">Typing habits and daily routine</h2>
+        <h2 className="text-2xl text-sky-900 font-bold">
+          Typing habits and daily routine
+        </h2>
         <p className="mt-3 text-zinc-700">
           Short, regular practice sessions are the best way to build typing
           speed. Dragon Typing encourages daily repetition by making each run
